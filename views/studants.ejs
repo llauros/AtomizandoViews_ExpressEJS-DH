@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+
+  <main class="main">
+    <div class="main_title">
+      <h1><%= title %></h1>
+    </div>
+    <section>
+        <div class="section_studant">
+            <!-- Iteração com forEach -->
+            <% studantsList.forEach( studant => {  %>
+                <h2>Hello, <%= studant.name %> !</h2>
+                <hr>
+            <% }) %>
+        </div>
+        <div class="section_studant_description">
+            <!-- Iteração com for/of -->
+            <h2>Description</h2>
+            <ul>
+                <% for(let studant of studantsList) { %>
+                    <li>Hello, I'm <%= studant.name %> and i'm <%= studant.age %> yers old</li>
+                    <hr>
+                <% } %>
+            </ul>
+        </div>
+    </section>
+  </main>
+
+<%- include('./partials/footer') %>

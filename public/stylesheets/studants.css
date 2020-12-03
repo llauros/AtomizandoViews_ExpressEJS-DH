@@ -1,0 +1,16 @@
+section {
+    display: flex;
+}
+
+.section_studant {
+    width: 30%;
+}
+
+.section_studant_description {
+    width: 70%;
+    align-self: center;
+}
+
+li {
+    list-style: square;
+}
